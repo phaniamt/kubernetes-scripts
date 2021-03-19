@@ -1,4 +1,4 @@
-export clustername=uib-beta
+export clustername=dev-cluster
 for h in $(eksctl get nodegroups --cluster=$clustername  | awk '{print $2}' | sed 1,3d); do
 echo " "
 echo "----------------------------------------------------------------"
